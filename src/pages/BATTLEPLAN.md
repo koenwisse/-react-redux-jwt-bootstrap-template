@@ -3,12 +3,12 @@ Battleplan:
 ### 1. As a user I want to view a list of spaces belonging to other users
 
 W5D2 // Set up backend database, fetch (GET) data in browser and use thunk to handle state
-Part 1 - Set up database
+Part 1 - Set up database DONE
 //1. Setup database model and migration file space stories
 //2. Set up relations
 //3. Put (seed) in dummy data and test
 
-// Part 2 - Make (backend) endpoint
+// Part 2 - Make (backend) endpoint DONE
 //1. Create and endpoint to post a story
 //2. Test our endpoint to post a story (httpie / postman)
 //3. Make a request to our endpoint in the frontend re. this feature (if breaks we know problem is in frontend)
@@ -18,7 +18,7 @@ Part 1 - Set up database
 //1. Create a component
 //2. Create a card component and a list component to show data on screen and setup routes
 //3. Import the logic in home
-//4. Write the logic to show the form
+//4. Write the logic to show the list
 
 //Part 4 - Plan frontend Redux-data --> Fetch data into actions with a thunk
 /1. Write an async function in action (thunk) and make axios request

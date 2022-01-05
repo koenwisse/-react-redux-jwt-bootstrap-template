@@ -1,5 +1,5 @@
 import { Jumbotron } from "react-bootstrap";
-import SpaceList from "../components/SpaceList";
+import SpaceList from "../components/space/SpaceList";
 
 const Home = () => (
   <Jumbotron>
