@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+
 export default function SpaceCard(props) {
   const { space } = props;
   const { backgroundColor, color, title, description } = space;

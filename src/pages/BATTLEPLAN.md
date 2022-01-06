@@ -14,7 +14,7 @@ Part 1 - Set up database DONE
 //3. Make a request to our endpoint in the frontend re. this feature (if breaks we know problem is in frontend)
 //4. If all good move to frontend
 
-// Part 3 - Plan frontend setup
+// Part 3 - Plan frontend setup DONE
 //1. Create a component
 //2. Create a card component and a list component to show data on screen and setup routes
 //3. Import the logic in home
