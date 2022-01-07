@@ -20,7 +20,7 @@ Part 1 - Set up database DONE
 //3. Import the logic in home
 //4. Write the logic to show the list
 
-//Part 4 - Plan frontend Redux-data --> Fetch data into actions with a thunk
+//Part 4 - Plan frontend Redux-data and take away from component level --> Fetch data into actions with a thunk: npm i redux and redux-thunk
 /1. Write an async function in action (thunk) and make axios request
 /2. import the function in the component
 /3. dispatch the function inside useEffect to see the console.log

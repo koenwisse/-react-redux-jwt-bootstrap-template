@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
-import appState from "./appState/spaceReducer";
+import appState from "./appState/reducer";
 import user from "./user/reducer";
-import spaceReducer from "./appState/spaceReducer";
+import spaces from "./spaces/reducer";
 
 export default combineReducers({
-  //write spaceReducer here because rootR needs to know that we have a child reducer
-  spaces: spaceReducer,
   appState,
   user,
+  //write spaceReducer here because rootR needs to know that we have a child reducer
+  spaces,
 });
