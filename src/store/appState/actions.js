@@ -1,3 +1,7 @@
+// An action is an object. If we have data, we need a payload. With fetching data in an object we need async.
+// we need redux thunk to fetch data in redux in the actions
+// redux thunk is a middleware that allows us to perform async operations in our actions
+
 import { DEFAULT_MESSAGE_TIMEOUT } from "../../config/constants";
 
 export const APP_LOADING = "APP_LOADING";

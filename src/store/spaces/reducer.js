@@ -1,8 +1,13 @@
 import { FETCH_SPACES_SUCCESS } from "./actions";
+import { SPACE_DETAILS_FETCHED } from "./actions";
 
-const initialState = { allSpaces: [] };
+const initialState = {
+  // allSpaces is an array of space object
+  allSpaces: [],
+};
 // state, only when store first instantiated (made) than state has value initialstate
 // initialState is default value
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (state = initialState, action) => {
   switch (action.type) {
     // case: does reducer care about case?
@@ -16,6 +21,9 @@ export default (state = initialState, action) => {
         // array gets the current state value and the action payload is added to that
         allSpaces: [...state.allSpaces, ...action.payload],
       };
+    case SPACE_DETAILS_FETCHED:
+      return { ...state, spaceDetails: { ...action.payload } };
+
     default:
       return state;
   }

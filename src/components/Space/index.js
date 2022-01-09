@@ -14,9 +14,11 @@ export default function Space(props) {
     >
       <h1>{props.title}</h1>
       <p>{props.description}</p>
-      <Link to={`/spaces/${props.id}`}>
-        <Button>Visit space</Button>
-      </Link>
+      {props.showLink && (
+        <Link to={`/spaces/${props.id}`}>
+          <Button>Visit space</Button>
+        </Link>
+      )}
     </Jumbotron>
   );
 }

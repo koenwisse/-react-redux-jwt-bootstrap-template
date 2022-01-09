@@ -10,3 +10,5 @@ export const selectSpaces = (state) => {
   // state is all reducers together but we need only spaces from reducer
   return state.spaces.allSpaces;
 };
+
+export const selectSpaceDetails = (state) => state.spaces.spaceDetails;

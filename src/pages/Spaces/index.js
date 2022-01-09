@@ -14,16 +14,20 @@ export default function Spaces() {
   const spaces = useSelector(selectSpaces);
 
   useEffect(() => {
-    // dispatch a "thunk action" by calling the "thunk action creator" named `fetchSpaces`
+    // dispatch a "thunk action" by calling the "thunk action creator" named `fetchSpaces` in the useEffectt. If we dont call we dont get the data.
     dispatch(fetchSpaces()); // goes to `redux-thunk`
+    // dispatch();
   }, [dispatch]);
 
   return (
     <>
       <Jumbotron>
+        {/* this is what is in the header */}
         <h1>Spaces</h1>
       </Jumbotron>
+      {/* Container is what is in body of the page */}
       <Container>
+        {/* we map over the spaces array and put in as a param a callback function that returns the values of the names in the objects */}
         {spaces.map((space) => {
           return (
             <Space
